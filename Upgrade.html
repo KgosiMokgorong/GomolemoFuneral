@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomolemo Funerals - Upgrade</title>
+    <link rel="stylesheet" href="upgrade-styles.css">
+    <style>
+        /* Additional styles for zoom effect */
+        .zoomed-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .zoomed-img img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .next, .back {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .next {
+            right: 20px;
+        }
+
+        .back {
+            left: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('WhatsApp Image 2024-05-18 at 14.54.34_3f64841f.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(240, 165, 0, 0.9);
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 1.8em;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        #upgrade {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #f0a500;
+            border-right: 5px solid #f0a500;
+        }
+
+        #upgrade h2 {
+            border-bottom: 2px solid #f0a500;
+            padding-bottom: 10px;
+            color: #f0a500;
+        }
+
+        .upgrade-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted size */
+            grid-gap: 20px;
+            justify-items: center;
+        }
+
+        .upgrade-images img {
+            width: 150px; /* Adjusted size */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ccc;
+            transition: transform 0.3s ease;
+        }
+
+        .upgrade-images img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gomolemo Funerals</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+					<li><a href="upgrade.html">Upgrade</a></li> 
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#planA">Plan A</a></li>
+                    <li><a href="#planB">Plan B</a></li>
+                    <li><a href="#planC">Plan C</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="upgrade">
+        <div class="container">
+            <h2>Upgrade</h2>
+			<p>You tell us what Casket you need, we source it for you nomatter what. Here are some.</p>
+            <div class="upgrade-images">
+                <img src="Upgrade 1.jpg" alt="Upgrade Image 1">
+				<img src="Upgrade 2.jpg" alt="Upgrade Image 2">
+				<img src="Upgrade 3.jpg" alt="Upgrade Image 3">
+				<img src="Upgrade 4a.jpg" alt="Upgrade Image 4">
+				<img src="Upgrade 4b.jpg" alt="Upgrade Image 5">
+				<img src="Upgrade 5.jpg" alt="Upgrade Image 6">
+				<img src="Upgrade 6.jpg" alt="Upgrade Image 7">
+				<img src="Upgrade 7.jpg" alt="Upgrade Image 8">
+				<img src="Upgrade 8.jpg" alt="Upgrade Image 9">
+				<img src="Upgrade 9.jpg" alt="Upgrade Image 10">
+				<img src="IMG-20240520-WA0046.jpg" alt="Upgrade Image 11">
+				<img src="PlanA.jpg" alt="Upgrade Image 12">
+				<img src="IMG-20240520-WA0037.jpg" alt="Upgrade Image 13">
+				<img src="IMG-20240520-WA0022.jpg" alt="Upgrade Image 14">
+				<img src="IMG-20240520-WA0024.jpg" alt="Upgrade Image 15">
+				<img src="IMG-20240520-WA0025.jpg" alt="Upgrade Image 16">
+				<img src="IMG-20240520-WA0026.jpg" alt="Upgrade Image 17">
+				<img src="IMG-20240520-WA0027.jpg" alt="Upgrade Image 18">
+				<img src="IMG-20240520-WA0030.jpg" alt="Upgrade Image 19">
+				<img src="IMG-20240520-WA0035.jpg" alt="Upgrade Image 20">
+				<img src="download.jpg" alt="Upgrade Image 20">
+				
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gomolemo Funerals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Zoomed image container -->
+    <div class="zoomed-img" id="zoomedImgContainer">
+        <span class="close" id="closeZoom">&times;</span>
+        <img id="zoomedImg" src="" alt="Zoomed Image">
+        <span class="next" id="nextImg">&#10095;</span> <!-- Next image button -->
+        <span class="back" id="backImg">&#10094;</span> <!-- Back image button -->
+    </div>
+
+
+	<script>
+    // JavaScript for zoom effect, rotation, and next/back image buttons
+    document.addEventListener('DOMContentLoaded', function () {
+        var images = document.querySelectorAll('.upgrade-images img');
+        var zoomedImgContainer = document.getElementById('zoomedImgContainer');
+        var zoomedImg = document.getElementById('zoomedImg');
+        var closeZoom = document.getElementById('closeZoom');
+        var nextImg = document.getElementById('nextImg');
+        var backImg = document.getElementById('backImg');
+        var rotateLeftBtn = document.getElementById('rotateLeft');
+        var rotateRightBtn = document.getElementById('rotateRight');
+        var currentIndex = 0;
+        var rotationDegrees = 0;
+
+        // Add event listeners to each image
+        images.forEach(function (img, index) {
+            img.addEventListener('click', function () {
+                zoomedImg.src = this.src;
+                zoomedImg.style.transform = 'rotate(' + rotationDegrees + 'deg)';
+                zoomedImgContainer.style.display = 'flex';
+                currentIndex = index;
+            });
+        });
+
+        // Close zoomed image when clicking close button
+        closeZoom.addEventListener('click', function () {
+            zoomedImgContainer.style.display = 'none';
+        });
+
+        // Show next image when clicking next button
+        nextImg.addEventListener('click', function () {
+            currentIndex = (currentIndex + 1) % images.length;
+            zoomedImg.src = images[currentIndex].src;
+            rotationDegrees = 0; // Reset rotation when switching images
+            zoomedImg.style.transform = 'rotate(' + rotationDegrees + 'deg)';
+        });
+
+        // Show previous image when clicking back button
+        backImg.addEventListener('click', function () {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            zoomedImg.src = images[currentIndex].src;
+            rotationDegrees = 0; // Reset rotation when switching images
+            zoomedImg.style.transform = 'rotate(' + rotationDegrees + 'deg)';
+        });
+
+        // Rotate left button
+        rotateLeftBtn.addEventListener('click', function () {
+            rotationDegrees -= 90;
+            zoomedImg.style.transform = 'rotate(' + rotationDegrees + 'deg)';
+        });
+
+        // Rotate right button
+        rotateRightBtn.addEventListener('click', function () {
+            rotationDegrees += 90;
+            zoomedImg.style.transform = 'rotate(' + rotationDegrees + 'deg)';
+        });
+    });
+</script>
+
+</body>
+</html>

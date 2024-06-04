@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomolemo Funerals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gomolemo Funerals</h1>
+            <nav>
+                <ul>
+                    <li><a href="#planA">Plan A</a></li>
+                    <li><a href="#planB">Plan B</a></li>
+                    <li><a href="#planC">Plan C</a></li>
+					<li><a href="upgrade.html">Upgrade</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+					<li><a href="gallery.html">Gallery</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <h2>Welcome to Gomolemo Funerals</h2>
+            <p>We offer a variety of funeral plans to suit your needs and budget. Browse our plans below to find the perfect option for you and your family.</p>
+        </div>
+    </section>
+
+    <section id="planA" class="plan">
+        <div class="container">
+            <h2>Plan A</h2>
+            <img src="PlanA.jpg" alt="Plan A">
+            <p><strong>Premiums:</strong></p>
+            <ul>
+                <li>Ages 18-64: R180.00/month</li>
+                <li>Ages 65-70: R190.00/month</li>
+                <li>Ages 71-74: R210.00/month</li>
+            </ul>
+            <p><strong>Cover Amount:</strong> R5,000.00</p>
+            <p><strong>Joining Fee:</strong> R100.00</p>
+            <p><strong>Waiting Period:</strong> 6 months</p>
+            <h3>Details:</h3>
+            <ul>
+                <li>1 main member + 9 beneficiaries</li>
+                <li>Age range: 0 to 84 years</li>
+                <li>No medical examination required</li>
+                <li>Probation period: 4 months</li>
+                <li>Coverage radius: 80km</li>
+                <li>Funeral services include pick up and storage of the deceased, dressing and delivery, coffin, wreath and name board, hearse, tent (5x10), 60 chairs, 50 programs, groceries, vegetables, and more.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="planB" class="plan">
+        <div class="container">
+            <h2>Plan B</h2>
+            <img src="PlanB.jpg" alt="Plan B">
+            <p><strong>Premiums:</strong></p>
+            <ul>
+                <li>Ages 18-64: R220.00/month</li>
+                <li>Ages 65-70: R270.00/month</li>
+                <li>Ages 71-74: R290.00/month</li>
+            </ul>
+            <p><strong>Cover Amount:</strong> R7,500.00</p>
+            <p><strong>Joining Fee:</strong> R100.00</p>
+            <p><strong>Waiting Period:</strong> 6 months</p>
+            <h3>Details:</h3>
+            <ul>
+                <li>Includes all services of Plan A</li>
+                <li>Additional services: family car, larger tent (7x12), 100 chairs, 100 programs, 100 disposable plates and spoons, additional groceries and vegetables.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="planC" class="plan">
+        <div class="container">
+            <h2>Plan C</h2>
+            <img src="PlanC.jpg" alt="Plan C">
+            <p><strong>Premiums:</strong></p>
+            <ul>
+                <li>Ages 18-64: R290.00/month</li>
+                <li>Ages 65-70: R300.00/month</li>
+                <li>Ages 71-74: R330.00/month</li>
+            </ul>
+            <p><strong>Cover Amount:</strong> R10,000.00</p>
+            <p><strong>Joining Fee:</strong> R100.00</p>
+            <p><strong>Waiting Period:</strong> 6 months</p>
+            <h3>Details:</h3>
+            <ul>
+                <li>Includes all services of Plan B</li>
+                <li>Increased quantities of groceries and vegetables.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For more information, please contact us at the following:</p>
+            <p><strong>Mafikeng Branch:</strong></p>
+            <p>Office No 6, Supreme Centre, Cnr Molopo & Robinson Street</p>
+            <p><strong>Main Branch:</strong></p>
+            <p>Stand No 10825, Lotlhakane Village, Mahikeng</p>
+            <p><strong>Phone:</strong> 079 447 0227, 073 264 5778, 073 767 9596, 072 538 2508</p>
+            <p><strong>Landline:</strong> +27 17 170 5076</p>
+            <p><strong>Email:</strong> gomolemofunerals@gmail.com</p>
+			
+			 <!-- Contact Form -->
+       <form action="contact_form_handler.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send</button>
+</form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gomolemo Funerals. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
